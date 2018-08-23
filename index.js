@@ -17,7 +17,7 @@ const client = new MisakiClient({
   shardCount: "auto"
 });
 
-client.login(process.env.DISCORD);
+client.login(process.env.BOT_TOKEN);
 
 client.on("disconnect", () => client.console.warn("Bot is disconnecting..."))
   .on("reconnect", () => client.console.log("Bot reconnecting..."))
